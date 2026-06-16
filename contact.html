@@ -120,25 +120,28 @@
                         <p class="text-xs text-gray-500 font-light mt-1">Submit your request right into our operations queue</p>
                     </div>
 
-                    <form action="#" method="POST" class="space-y-5 text-sm">
+                  <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5 text-sm">
+                        
+                        <input type="hidden" name="access_key" value="0758ce2e-c4b4-40dc-93fa-5611bd6c8458">
+
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5">Full Name</label>
-                            <input type="text" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
+                            <input type="text" name="name" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
                         </div>
 
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5">Email Address</label>
-                            <input type="email" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
+                            <input type="email" name="email" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
                         </div>
 
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5">Phone Number</label>
-                            <input type="tel" class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
+                            <input type="tel" name="phone" class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
                         </div>
 
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5">Nature of Inquiry</label>
-                            <select class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
+                            <select name="inquiry_type" class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27]">
                                 <option>General Information</option>
                                 <option>Madrasah Enrollment</option>
                                 <option>Nikah Booking Ceremony</option>
@@ -149,7 +152,7 @@
 
                         <div>
                             <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1.5">Your Message</label>
-                            <textarea rows="4" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27] resize-none"></textarea>
+                            <textarea name="message" rows="4" required class="w-full bg-[#fafaf4] border border-[#b45309]/20 focus:border-[#b45309] focus:outline-hidden rounded-md px-4 py-2.5 transition text-[#1c2d27] resize-none"></textarea>
                         </div>
 
                         <button type="submit" class="w-full bg-[#042f2e] hover:bg-[#064e3b] text-white py-3 rounded-md font-serif-islamic tracking-widest uppercase text-xs font-medium transition duration-300 shadow-md">
